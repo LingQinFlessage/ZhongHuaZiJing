@@ -1,0 +1,1202 @@
+.confirmit-look-container, .confirmit-lookup-container *
+{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+form, fieldset, legend
+{
+    margin: 0;
+    padding: 0;
+}
+.yui-history-iframe
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+}
+.confirmit-watermark
+{
+    color: #ACA899;
+}
+.confirmit-grid tr td label, .confirmit-hidden
+{
+    display: none;
+}
+.confirmit-grid
+{
+    border-collapse: collapse;
+}
+.confirmit-errorlist
+{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.confirmit-multicolumn
+{
+    float: left;
+    padding-left: 3px;
+}
+.confirmit-clearcolumns
+{
+    clear: both;
+    height: 1px;
+}
+.confirmit-dynamic-question
+{
+    margin: 0;
+    padding: 0;
+}
+.confirmit-dynamic-error
+{
+    margin: 0;
+    padding: 0;
+}
+td.confirmit-cellerror
+{
+    background-color: #ff8888;
+}
+#progressbar
+{
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+#progressbarscale
+{
+    width: 100%;
+    margin-bottom: 0px;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+#progressbarscale td
+{
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+#progressbarscale .leftcol
+{
+    text-align: left;
+}
+#progressbarscale .midcol
+{
+    width: 33.33%;
+}
+#progressbarscale .rightcol
+{
+    text-align: right;
+}
+#progressbar td
+{
+    padding: 0px;
+}
+#progressbarleft
+{
+    visibility: hidden;
+    margin-left: 0px;
+    overflow: hidden;
+}
+#progressbarright
+{
+    visibility: hidden;
+    margin-right: 0px;
+    overflow: hidden;
+    height: 1px;
+}
+.clear_b
+{
+    clear: both;
+}
+fieldset
+{
+    border-style: none;
+}
+.confirmit-table
+{
+    border-collapse: collapse;
+}
+.confirmit-rankedorder-orderelement
+{
+    border: solid 1px silver;
+}
+.confirmit-rankedorder-orderelementdrag
+{
+    background-color: #8592b5;
+    border: solid 1px #0a246a;
+    cursor: pointer;
+    color: #fff;
+}
+.confirmit-rankedorder-orderelementhover
+{
+    background-color: #b6bdd2;
+    border: solid 1px #0a246a;
+    cursor: pointer;
+}
+.confirmit-rankedorder-dropzonehover
+{
+    background-color: #ccc;
+}
+.confirmit-rankedorder-counter
+{
+    border: solid 1px silver;
+}
+.confirmit-rankedorder-dragger
+{
+    position: absolute;
+    z-index: 9999;
+}
+
+.confirmit-rankedorder-add, .confirmit-rankedorder-remove, .confirmit-rankedorder-up, .confirmit-rankedorder-down
+{
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.confirmit-rankedorder-add, .confirmit-rtl .confirmit-rankedorder-remove
+{
+    background: url(/cf_clientutil/wix/images/moveRight.gif) no-repeat;
+}
+
+.confirmit-rankedorder-remove, .confirmit-rtl .confirmit-rankedorder-add
+{
+    background: url(/cf_clientutil/wix/images/moveLeft.gif) no-repeat;
+}
+
+.confirmit-rankedorder-up
+{
+    background: url(/cf_clientutil/wix/images/moveUp.gif) no-repeat;
+    margin-bottom: 12px;
+}
+
+.confirmit-rankedorder-down
+{
+    background: url(/cf_clientutil/wix/images/moveDown.gif) no-repeat;
+}
+
+.confirmit-attention
+{
+    margin: 10px 0;
+    padding: 3px 3px 6px 26px;
+    border: solid 1px #96965E;
+    color: #000;
+    background: #ffffcc url(/cf_clientutil/images/attention_small.gif) no-repeat 6px 6px;
+}
+.confirmit-textarea
+{
+    overflow: auto;
+}
+
+/* HIERARCHY */
+.confirmit-hierarchy input
+{
+}
+.confirmit-hierarchy
+{
+    clear: both;
+    border: solid 1px #ccc;
+    overflow: hidden;
+    background: #fff;
+    font-size: 100%;
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+}
+.confirmit-hierarchy ul.confirmit-hierarchy-carousel
+{
+    padding: 0px;
+    margin: 0px;
+    width: 10000000px;
+    position: relative;
+    z-index: 1;
+}
+.confirmit-hierarchy ul.confirmit-hierarchy-carousel li
+{
+    float: left;
+    list-style: none;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+body.confirmit-rtl .confirmit-hierarchy ul.confirmit-hierarchy-carousel li 
+{
+    float: right;
+}
+confirmit-hierarchy-clip-region
+{
+    overflow: hidden;
+    margin: 0px auto;
+    position: relative;
+}
+.confirmit-hierarchy ul.confirmit-hierarchy-carousel li div
+{
+    position: relative;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+}
+.confirmit-hierarchy ul.confirmit-hierarchy-carousel li div a
+{
+    display: block;
+    position: relative;
+    text-decoration: none;
+    white-space: nowrap;
+    border-bottom: solid 1px #ccc;
+    outline-style: none;
+}
+.confirmit-hierarchy a.c-h-g
+{
+    padding: 5px 2px 5px 22px;
+    background: transparent url(/cf_clientutil/images/firmtreeview/folder_closed.gif) no-repeat 3px 2px;
+}
+body.confirmit-rtl .confirmit-hierarchy a.c-h-g {
+    background-position: right center;
+    margin-right: 4px;
+    padding-right: 22px;
+    padding-left: 2px;
+}
+.confirmit-hierarchy a.c-h-g-sr img
+{
+    border-width: 0px;
+    padding-left: 2px;
+}
+.confirmit-hierarchy a.c-h-l label, .confirmit-hierarchy a.c-h-l-sr label
+{
+    padding-left: 2px;
+}
+.confirmit-hierarchy a.c-h-u
+{
+    padding: 4px 0 4px 22px;
+    background: transparent url(/cf_clientutil/images/firmtreeview/Up_One_Level_16.gif) no-repeat 3px 2px;
+}
+body.confirmit-rtl .confirmit-hierarchy ul.confirmit-hierarchy-carousel li div a.c-h-u {
+    background-position: center right;
+    padding-right: 22px;
+    margin-right: 4px;
+    padding-left: 2px;
+}
+.confirmit-hierarchy a.c-h-g:hover, .confirmit-hierarchy a.c-h-l:hover, .confirmit-hierarchy a.c-h-u:hover, .confirmit-hierarchy a.c-h-g-sr:hover, .confirmit-hierarchy a.c-h-l-sr:hover
+{
+    background-color: #f1f1f1;
+}
+.confirmit-hierarchy a.c-h-l-sr, .confirmit-hierarchy a.c-h-l-sr:hover
+{
+    padding-left: 18px;
+}
+.confirmit-hierarchy a.c-h-s, .confirmit-hierarchy a.c-h-s:hover
+{
+    background-color: #316AC5;
+    color: #fff;
+}
+.confirmit-hierarchy-search
+{
+    font-size: 100%;
+    width: 100%;
+    margin-bottom: 2px;
+}
+.confirmit-hierarchy-progress
+{
+    height: 16px;
+    width: 16px;
+    background: transparent url(/cf_clientutil/images/indicator_small.gif) no-repeat top left;
+    visibility: hidden;
+    position: absolute;
+    left: -1000px;
+    top: -1000px;
+}
+.confirmit-hierarchy-levels
+{
+}
+.confirmit-hierarchy-levels ul
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.confirmit-hierarchy-levels ul li
+{
+    float: left;
+    white-space: nowrap;
+    padding: 3px 2px;
+    margin: 0;
+}
+body.confirmit-rtl .confirmit-hierarchy-levels ul li 
+{
+    float: right;    
+}
+.confirmit-hierarchy-levels ul li a
+{
+    text-decoration: none;
+}
+.confirmit-hierarchy-levels ul li a:hover
+{
+    text-decoration: underline;
+}
+/* CARD SORT */
+.confirmit-cardsorter-card
+{
+    cursor: pointer;
+    background: transparent url(/cf_clientutil/wix/images/card_empty.gif) no-repeat;
+}
+.confirmit-cardsorter-carddrag
+{
+    background: transparent url(/cf_clientutil/wix/images/card_drag.gif) no-repeat;
+}
+.confirmit-cardsorter-card, .confirmit-cardsorter-carddrag
+{
+    padding: 10px;
+    width: 57px;
+    height: 78px;
+    font-weight: bold;
+}
+.confirmit-cardsorter-deck
+{
+    border: solid 1px #ccc;
+    height: 105px;
+    width: 80px;
+    padding: 6px 0 0 8px;
+    background: #f1f1f1;
+    margin: 10px 60px 10px 0;
+}
+.confirmit-cardsorter-decklabel
+{
+    padding-left: 8px;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 5px 0;
+}
+.confirmit-cardsorter-drop
+{
+    background: transparent url(/cf_clientutil/wix/images/card_holder.gif) no-repeat;
+}
+.confirmit-cardsorter-drophover
+{
+    background: transparent url(/cf_clientutil/wix/images/card_holder_hover.gif) no-repeat;
+}
+.confirmit-cardsorter-drop, .confirmit-cardsorter-drophover
+{
+    height: 105px;
+    width: 80px;
+    font-weight: bold;
+    margin: 0 10px;
+}
+.confirmit-cardsorter-droplabel
+{
+    padding-left: 10px;
+    font-weight: bold;
+    font-size: 12px;
+    margin: 5px 0;
+}
+/* SLIDERS */
+.has-carousel .confirmit-gridslider
+{
+    position: relative;
+}
+.confirmit-gridslider-bg
+{
+    position: absolute;
+    cursor: pointer;
+}
+.confirmit-gridslider-rail
+{
+    position: absolute;
+    background: transparent url(/cf_clientutil/wix/images/rail-horiz.gif) repeat-x;
+    background-position: 0px 8px;
+    height: 15px;
+}
+.confirmit-gridslider-thumb
+{
+    position: absolute;
+    top: 0px;
+    z-index: 1;
+}
+.confirmit-numslider-horiz-bg
+{
+    position: absolute;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.confirmit-numslider-horiz-rail
+{
+    position: absolute;
+    background: transparent url(/cf_clientutil/wix/images/rail-horiz.gif) repeat-x;
+    background-position: 0px 8px;
+    height: 30px;
+}
+.confirmit-numslider-horiz-thumb
+{
+    position: absolute;
+    z-index: 1;
+}
+.confirmit-numslider-vert-bg
+{
+    position: absolute;
+    width: 30px;
+    cursor: pointer;
+}
+.confirmit-numslider-vert-rail
+{
+    position: absolute;
+    background: transparent url(/cf_clientutil/wix/images/rail-vert.gif) repeat-y;
+    background-position: 8px 0px;
+    width: 30px;
+}
+.confirmit-numslider-vert-thumb
+{
+    position: absolute;
+    z-index: 1;
+}
+.confirmit-singleslider-vert-bg
+{
+    position: absolute;
+    width: 26px;
+    cursor: pointer;
+}
+.confirmit-singleslider-vert-rail
+{
+    position: absolute;
+    background: transparent url(/cf_clientutil/wix/images/rail-vert.gif) repeat-y;
+    width: 24px;
+    background-position: 10px 0px;
+}
+.confirmit-singleslider-vert-thumb
+{
+    position: absolute;
+    z-index: 1;
+    left: 2px;
+}
+.confirmit-singleslider-horiz-bg
+{
+    position: absolute;
+    height: 22px;
+    cursor: pointer;
+}
+.confirmit-singleslider-horiz-rail
+{
+    position: absolute;
+    background: transparent url(/cf_clientutil/wix/images/rail-horiz.gif) repeat-x;
+    background-position: 0px 8px;
+    height: 20px;
+}
+.confirmit-singleslider-horiz-thumb
+{
+    position: absolute;
+    z-index: 1;
+}
+.top-align
+{
+    vertical-align: top;
+}
+/* LOOKUPS */
+.confirmit-lookup-container
+{
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+.confirmit-lookup-container a
+{
+    text-decoration: underline;
+}
+.confirmit-lookup-container a:hover
+{
+    color: #ffa500;
+}
+.confirmit-lookup-search
+{
+    font-size: 110%;
+    margin: 0 0 1px 0;
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+}
+div.confirmit-lookup
+{
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    overflow: auto;
+    background: #fff;
+    color: #000;
+    clear: both;
+}
+.confirmit-lookup div
+{
+    border: 1px solid #fff;
+}
+div.confirmit-lookup-current
+{
+    background-color: #426FD9;
+    color: #fff;
+    border: 1px dotted #999;
+}
+.confirmit-lookup-exclusive, .confirmit-lookup-other
+{
+    border-left: solid 1px #ccc;
+    border-right: solid 1px #ccc;
+    border-bottom: solid 1px #ccc;
+    background: #fff;
+    color: #000;
+}
+.confirmit-lookup-exclusive label, .confirmit-lookup-other label
+{
+    margin-bottom: 2px;
+    display: inline-block;
+}
+.confirmit-lookup-selection
+{
+    margin: 0 0 2px 0;
+    overflow: auto;
+    background: #fff;
+    color: #000;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    height: 100px;
+}
+.confirmit-lookup-selected
+{
+    border-bottom: 1px solid #ccc;
+    clear: both;
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    background: #f1f1f1;
+}
+.confirmit-lookup-hover
+{
+    background-color: #e3e3e3;
+}
+.confirmit-lookup-selected span
+{
+    margin: 0;
+    float: left;
+    display: block;
+    padding: 2px;
+}
+.confirmit-lookup-selected a
+{
+    margin: 0;
+    float: right;
+    display: block;
+    background: transparent url(/cf_clientutil/wix/images/remove.gif) no-repeat center center;
+    width: 17px;
+    height: 17px;
+    border: 1px solid #f1f1f1;
+}
+.confirmit-lookup-selected a:active
+{
+    outline: none;
+}
+.confirmit-lookup-progress
+{
+    z-index: 9999;
+    background-color: #363636;
+    border-radius: 4px;
+    padding: 5px;
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    top: -999em;
+}
+.confirmit-rtl .confirmit-lookup div 
+{
+    height: 26px;
+    display: block;
+}
+.confirmit-rtl .confirmit-lookup-container input, .confirmit-rtl .confirmit-lookup-container label 
+{
+	float: right;
+}
+.confirmit-rtl .confirmit-lookup-other div 
+{
+    display: block;
+    height: 31px;
+}
+.confirmit-rtl .confirmit-lookup-exclusive div 
+{
+    display: block; 
+    height: 26px;
+}
+.confirmit-rtl .confirmit-lookup-selected a 
+{
+    float: left;
+}
+.confirmit-rtl .confirmit-lookup-selected span {
+float: right;
+}
+
+/* CALENDAR */
+div.confirmit-cal
+{
+    z-index: 2000;
+    display: none;
+    min-width: 180px;
+    width: auto !important;
+    width: 180px;
+    position: absolute;
+    font-family: Verdana, Arial;
+    font-size: 11px;
+}
+img.confirmit-cal-img
+{
+    cursor: pointer;
+    vertical-align: bottom;
+    margin-left: 2px;
+}
+div.yui-skin-sam div.yui-calcontainer div.title
+{
+    height: auto !important;
+    height: 10px;
+}
+.yui-skin-sam .yui-calendar div.calheader a.calnav
+{
+    color: #06c;
+    border: 1px solid #C1C1C1;
+    padding-bottom: 1px;
+    padding-right: 14px;
+    background: #ffffff url(/cf_ClientUtil/images/cal-down.gif) no-repeat right;
+}
+.yui-skin-sam .yui-calendar div.calheader a.calnav:hover
+{
+    text-decoration: underline;
+    color: #ff6600;
+    background: #ffffff url(/cf_ClientUtil/images/cal-down.gif) no-repeat right;
+}
+
+/* CHARTS */
+.confirmit-chart-container
+{
+}
+.confirmit-chart-itemlabel
+{
+    padding: 3px 0px;
+    font-family: Verdana, Arial;
+    font-size: 10px;
+}
+.confirmit-chart-progress-bg
+{
+    margin: 0 0 8px 0px;
+    padding: 3px;
+    background-color: #333333;
+    font-family: Verdana, Arial;
+    font-size: 10px;
+}
+.confirmit-chart-progress-bar
+{
+    font-family: Verdana, Arial;
+    font-size: 10px;
+    background-image: url(/cf_clientutil/images/confirmit-bar-orange.png);
+}
+.confirmit-chart-total
+{
+    font-family: tahoma, Arial;
+    font-size: 12px;
+    margin-top: 20px;
+    padding: 5px 3px;
+    color: #FDCD21;
+    background-color: #333333;
+}
+.confirmit-chart-subcat
+{
+    padding: 3px 0px;
+    font-family: Verdana, Arial;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 5px 3px;
+    color: #FDCD21;
+    background-color: #808080;
+}
+
+/* GRID BARS */
+.confirmit-gb-l
+{
+    margin: 6px 0 6px 0;
+    font-weight: bold;
+    font-size: 13px;
+    font-family: Verdana, Arial;
+}
+.confirmit-gb-c
+{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    margin-left: 40px;
+}
+.confirmit-gb-c td, .confirmit-centernav
+{
+    text-align: center;
+}
+.confirmit-gb-bc
+{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    margin-left: auto;
+    margin-right: auto;
+}
+.confirmit-gb-star-container
+{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.confirmit-gb-bcl
+{
+    font-family: Verdana, Arial;
+    font-size: 10px;
+    color: #696969;
+    font-weight: bold;
+}
+.confirmit-gb-sl
+{
+    font-family: Verdana, Arial;
+    font-size: 10px;
+    color: #333;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+/* INLINE SURVEYS */
+.confirmit-overlay-header
+{
+    background-color: #fff;
+    font-weight: bold;
+    padding: 0 0 4px 0;
+    white-space: nowrap;
+}
+.confirmit-overlay-body
+{
+    background-color: #fff;
+    border: 1px solid #fff;
+    padding: 0px 6px 0px 6px;
+    margin: 0px;
+    padding: 0px;
+}
+.confirmit-overlay-footer
+{
+    background-color: #fff;
+    height: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+.confirmit-inline
+{
+    overflow: hidden;
+}
+.confirmit-align-center
+{
+    text-align: center;
+}
+.confirmit-align-left
+{
+    text-align: left;
+}
+.confirmit-align-right
+{
+    text-align: right;
+}
+
+/* ----------- Resizable ------------ */
+.confirmit-resizable
+{
+    padding: 0px;
+    resize: none;
+    border-top: 1px inset #abadb3;
+    border-right: 1px solid #dbdfe6;
+    border-bottom: 1px solid #dbdfe6;
+    border-left: 1px solid #dbdfe6;
+}
+
+/* ----------- Multi open ------------ */
+.confirmit-multiopen-resizable
+{
+    padding-bottom: 4px;
+}
+/* ----------- Answer Buttons -------- */
+
+.confirmit-abtn
+{
+    border: solid 1px #adadad;
+    cursor: pointer;
+    text-align: center;
+    vertical-align: middle;
+    height: 40px;
+}
+.confirmit-abtn-sm
+{
+    width: 100%;
+}
+.confirmit-abtn-grid
+{
+    width: 100px;
+}
+.confirmit-abtn-label
+{
+    text-align: center;
+}
+.confirmit-abtn-label label
+{
+    cursor: pointer;
+}
+
+.confirmit-fwdfirstnav-next
+{
+    float: right;
+    width: 49%;
+}
+
+.confirmit-fwdfirstnav-prev
+{
+    float: left;
+    width: 49%;
+}
+
+.confirmit-offscreen, .confirmit-offscreen-rtl
+{
+    position: absolute;
+    top: -9999em;
+}
+
+.confirmit-load-more
+{
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 10px 10px 26px;
+    color: #0000EF;
+    cursor: pointer;
+}
+.getting-more
+{
+    color: #ccc;
+}
+.confirmit-star
+{
+    border: none;
+    width: 30px;
+    height: 30px;
+    background-image: url(/cf_clientutil/wix/images/star-unselected.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.confirmit-star-hover
+{
+    background-image: url(/cf_clientutil/wix/images/star-selected.png);
+}
+
+.confirmit-ranking-number-flash
+{
+    position: absolute;
+    font-size: 100px;
+    padding-top: 20px;
+    height: 100px;
+    display: block;
+    color: #000;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.confirmit-ranking-number-flash-transition
+{
+    color: #000;
+    height: 20px;
+    height: 200px;
+    display: block;
+}
+
+.confirmit-ranked-order-value
+{
+    position: absolute;
+    left: 10px;
+    top: -7px;
+    border: 1px solid #CCC;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    line-height: 20px;
+    padding: 3px 3px 3px 3px;
+    width: auto !important;
+    width: 20px;
+    min-width: 20px;
+    height: auto !important;
+    height: 20px;
+    min-height: 20px;
+    -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5) inset;
+    -moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5) inset;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5) inset;
+    border-radius: 3px;
+    background: #FFF;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.confirmit-rtl .confirmit-ranked-order-value
+{
+    right: 10px;
+    left: auto;
+}
+
+.confirmit-hierarchycontainer
+{
+    *width: 300px;
+    min-width: 300px;
+    
+}
+
+.confirmit-hierarchycontainer select
+{
+    padding: 2px;
+    width: 100%;
+}
+
+.confirmit-rankedorderclick-default .confirmit-abtn-label
+{
+    text-align: left;
+    padding-left: 20px;
+}
+
+.confirmit-rtl .confirmit-rankedorderclick-default .confirmit-abtn-label
+{
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 0px;
+}
+
+.confirmit-ranked-abtn-label label
+{
+    margin-left: 30px;
+}
+
+.confirmit-rtl .confirmit-ranked-abtn-label label
+{
+    margin-right: 30px;
+    margin-left: 0px;
+}
+
+.confirmit-rankedorderclick-default .confirmit-abtn
+{
+    border:none;
+    background:none !important;
+    outline:none;
+}
+
+.confirmit-rankedorderclick-default div
+{
+    padding: 5px 0;
+    *padding: 15px 0;
+    margin-bottom: 10px;
+    border-radius: 6px;
+
+}
+
+.confirmit-rankedorderclick-default .confirmit-other-input
+{
+    border-radius: 3px;
+    border: 1px solid #999;
+    line-height: 20px;
+    padding: 0px 5px;
+}
+
+.confirmit-rankedorderclick-default .confirmit-ranked-abtn-label
+{
+    line-height: 33px;
+    *line-height: normal;
+}
+
+.confirmit-rankedorderclick-default .confirmit-ranked-order-value
+{
+    -webkit-box-shadow: 0px 0px 3px #777 inset;
+       -moz-box-shadow: 0px 0px 3px #777 inset;
+            box-shadow: 0px 0px 3px #777 inset;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    text-align: center;
+}
+
+.confirmit-rankedorderclick .confirmit-ranked-abtn-label
+{
+    background: #eee;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #ffffff /*{c-bup-background-start}*/), to( #f1f1f1 /*{c-bup-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #ffffff /*{c-bup-background-start}*/, #f1f1f1 /*{c-bup-background-end}*/);
+	border: 1px solid #ccc;
+}
+
+.confirmit-rankedorderclick-hover .confirmit-ranked-abtn-label
+{
+    background: #dfdfdf;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #f6f6f6 /*{c-bhover-background-start}*/), to( #e0e0e0 /*{c-bhover-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #f6f6f6 /*{c-bhover-background-start}*/, #e0e0e0 /*{c-bhover-background-end}*/);
+	border: 1px solid #bbb;
+}
+
+.confirmit-rankedorderclick-selected .confirmit-ranked-abtn-label
+{
+    background: #d6d6d6;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #d0d0d0 /*{c-bdown-background-start}*/), to( #dfdfdf /*{c-bdown-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/);
+	border: 1px solid #bbb;
+}
+
+.confirmit-rankedorderclick-selectedhover .confirmit-ranked-abtn-label
+{
+    background: #d6d6d6;
+    background-image: -webkit-gradient(linear, left top, left bottom, from( #d0d0d0 /*{c-bdown-background-start}*/), to( #dfdfdf /*{c-bdown-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/); /* Chrome 10+, Saf5.1+ */
+	background-image:    -moz-linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/); /* FF3.6 */
+	background-image:     -ms-linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/); /* IE10 */
+	background-image:      -o-linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/); /* Opera 11.10+ */
+	background-image:         linear-gradient( #d0d0d0 /*{c-bdown-background-start}*/, #dfdfdf /*{c-bdown-background-end}*/);
+	border: 1px solid #bbb;
+}
+
+.confirmit-rankedorderclick-default .confirmit-ranked-order-value
+{
+    top: 8px;
+}
+
+.confirmit-hierarchy-optional
+{
+    color: #595959;
+}
+
+/*Autosum Desktop*/
+.confirmit-input-prefix,
+.confirmit-pre-suf-input-wrapper input[type=number],
+.confirmit-input-suffix,
+.confirmit-as-total-prefix,
+.confirmit-as-sum-field,
+.confirmit-as-total-suffix
+{
+    display: inline-block;
+}
+.yui3-resize-wrapper, .yui3-resize-wrapper * {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box; /* Firefox */
+	-webkit-box-sizing: border-box; /* Safari */
+	-ms-box-sizing: border-box; /* IE8 */
+}
+.confirmit-answer-image
+{
+    border-width: 0;
+}
+
+/* uploader progress bar */
+.confirmit-uploader-overlay {
+    position: fixed;
+    background: black;
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.confirmit-uploader-dialog-wrap {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -92px;
+    width: 80%;
+    min-width: 100px;
+    max-width: 360px;
+    height: 184px;
+    z-index: 1000;
+}
+
+.confirmit-uploader-dialog {
+     -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: -50%;
+    width: 100%;
+    height: 184px;
+    border: 1px solid #aaaaaa;
+    border-radius: 9px;
+    background: #FFFFFF;
+}
+
+.confirmit-uploader-title {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border-radius: 9px 9px 0 0;
+    height: 40px;
+    background: #3b3b3b;
+    background: linear-gradient(to bottom, #3b3b3b, #121212);
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    color: white;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 0 20px;
+}
+
+.confirmit-uploader-progress-wrapper {
+    margin: 24px 10px;
+    border: 1px solid #7f7f7f;
+    padding: 1px;
+}
+
+.confirmit-uploader-dialog .confirmit-uploader-progress {
+    background-color: #6787e3;
+    height: 30px;
+    border-radius: 0;
+}
+
+.confirmit-uploader-actions {
+    text-align: right;
+    margin: 0 14px;
+}
+
+.confirmit-uploader-cancel {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px 16px;
+    border: 1px solid #CCC;
+    border-radius: 16px;
+    color: black;
+    background: white;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    cursor: pointer;
+    font-weight: bold;
+}/* ----------- NON ACCESSIBILITY STYLES ONLY ------------ */
+.yui-skin-sam .mask
+{
+    opacity: .8;
+    background-color: #000;
+}
+*.yui-skin-sam .mask
+{
+    filter: alpha(opacity=80);
+}
+.confirmit-lookup-selected a:focus
+{
+    -moz-outline-style: none;
+}
