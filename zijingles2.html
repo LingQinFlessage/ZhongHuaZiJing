@@ -970,12 +970,15 @@ if(document.getElementById) {
 <div id='toolContainer'>
 
 </div>
-
-<div id='test-result'>
+<div id='test-result' class="row">
+	<p>平均用时： <span class="timeCounter"></span>  秒</p>
+	<p>最高用时： <span class="highCounter"></span> 秒</p>
 	<p>正确： <span class="correctCounter"></span> </p>
 	<p>错误： <span class="wrongCounter"></span> </p>
-	<p>平均用时： <span class="timeCounter"></span>  秒</p>
-	<p>最高用时： <span class="highCounter"></span> 秒</p>	
+	<div class="wrong-words-wrapper">
+		<p>小朋友，下面的字还要努力认住哦</p>
+		<div class="row"></div>
+	</div>
 </div>
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -1006,11 +1009,18 @@ display:none;
 /******custom style overwrite*********/
 #test-result{
 display:none;
+max-width:90%;
+width:400px;
+margin:10px auto;
+}
+.wrong-words-wrapper .character{
+ font-size:35pt;
+ padding:0;
 }
 .pagearea{
 background:none;
 }
-div.questionarea:not(:last-child){
+div.questionarea:not(:last-child),.wrong-words-wrapper{
 	display:none;
 }
 #toolContainer{
@@ -1046,8 +1056,15 @@ height:100px;
 line-height:100px;
 text-transform:none;
 }
+.start-button{
+ margin:0 10px;
+}
 .tool-button,.tool-button:hover {
     background-color: #3f81ec;
+	padding:8px 35px;
+}
+.progress-text{
+  visibility:hidden;
 }
 @media screen and (max-height: 480px), screen and (max-width: 480px){
 .jqtoolscript.questionarea {
@@ -1075,7 +1092,7 @@ text-transform:none;
 </style>
 
 
-<script src="assets/AssociationGame_v2.5.1.zijing.js"></script>
+<script src="assets/AssociationGame_v2.5.2.zijing.min.js"></script>
 
 <script type="text/javascript">
 
@@ -1385,7 +1402,6 @@ les2:{
 }
 }
 
-var iOrderArr=[];
 var currentLes=2;
 function addCodeToWordsArr(arr){
 	var iWordCount=0;
@@ -1394,7 +1410,7 @@ function addCodeToWordsArr(arr){
 			arr[iWordCount]=words["les"+currentLes].sentences[i][s].level;
 			iWordCount++;
 			words["les"+currentLes].sentences[i][s].code=iWordCount;
-			iOrderArr.push(iWordCount);
+			//iOrderArr.push(iWordCount);
 			
 		}
 		
@@ -1402,34 +1418,6 @@ function addCodeToWordsArr(arr){
 	//console.log(words);
 }
 
-function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex;
-
-  // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
-
-    // Pick a remaining element...
-    randomIndex = Math.floor(Math.random() * currentIndex);
-    currentIndex -= 1;
-
-    // And swap it with the current element.
-    temporaryValue = array[currentIndex];
-    array[currentIndex] = array[randomIndex];
-    array[randomIndex] = temporaryValue;
-  }
-  return array;
-}
-
-function isInArray(arr,code){
- var iIndex=-1;
-	for(var c = 0; c < arr.length; c++){
-		if(parseInt(arr[c])==parseInt(code)){
-			iIndex=c;
-			break;
-		}
-	}
- return iIndex;
-}
 
 $(document).ready( function() {
 	var thisForm=getFormName(2);
@@ -1439,32 +1427,18 @@ $(document).ready( function() {
 	//add code to array words+add level to Arr
 	addCodeToWordsArr(oDataItems[4]);
 	//console.log(oDataItems);	
-	var ranOrderArr=shuffle(iOrderArr);
-	//console.log(ranOrderArr);
 
-	var ranDataItems=[[],[],[],[],[]]
-	for(var r=0;r<ranOrderArr.length;r++){
-		var itemIndex=isInArray(oDataItems[0],ranOrderArr[r]);
-		if(itemIndex>-1){
-			ranDataItems[0][r]=oDataItems[0][itemIndex];
-			ranDataItems[1][r]=oDataItems[1][itemIndex];
-			ranDataItems[2][r]=oDataItems[2][itemIndex];
-			ranDataItems[3][r]=oDataItems[3][itemIndex];
-			ranDataItems[4][r]=oDataItems[4][itemIndex];			
-		}
-		else{
-			console.log("index not found")
-		}
-	}
-	console.log(ranDataItems);
 	//console.log(oDataLabels);
 	var ASGame=new SSIAssociationGame({
 		'sForm'			:thisForm,
 		'sTimerForm'	:getFormName(3),
 		'toolContainer'	:'#toolContainer',
-		'oItems'		:ranDataItems,
+		'oOriginalItems':oDataItems,		
+		//'oItems'		:ranDataItems,
+		'randomizeStatments':true,
 		'oOriglabels'	:oDataLabels,
-		'sStart'		:'开始',
+		'sStart'		:'前八句',
+		'sStartTwo'		:'全文',		
 		'sContinue'		:'OK,CONTINUE',	
 		'clkEvtEnabled' :true,
 		'keyEventEnabled':false,
