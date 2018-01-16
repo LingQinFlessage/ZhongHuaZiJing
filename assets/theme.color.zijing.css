@@ -1,0 +1,481 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900,100italic,300italic,400italic,500italic,700italic,900italic&subset=latin-ext);
+.progress,
+.section-block {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px
+}
+
+.hidden,
+.nav:after,
+.title {
+    visibility: hidden
+}
+
+body {
+    background-color: #E9ECEF;
+    font-size: 15px;
+    font-family: Roboto, Calibri, Arial, Helvetica, Sans-serif;
+    line-height: 22px
+}
+
+
+.section-block,
+.toolarea,
+.toolarea-container {
+    background-color: #FFF
+}
+
+body {
+    padding: 0!important;
+    margin: 0!important
+}
+
+.color_blue {
+    color: #02C4C4
+}
+
+.color_orange {
+    color: #F48B00
+}
+
+div.body {
+    padding-top: 8px;
+    padding-bottom: 8px
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 1em
+}
+
+.section-block:after {
+    content: " ";
+    display: block;
+    clear: both
+}
+/*.confirmit a:link {
+    opacity: 0;
+    -webkit-transition: opacity .5s linear;
+    -moz-transition: opacity .5s linear;
+    -ms-transition: opacity .5s linear;
+    -o-transition: opacity .5s linear;
+    transition: opacity .5s linear
+}
+
+.confirmit a:hover {
+    background-position: top center;
+    opacity: 1
+}
+
+.content-area .section-block:first-child .questiontitle {
+    -webkit-border-top-left-radius: .5em;
+    -webkit-border-top-right-radius: .5em;
+    -moz-border-top-left-radius: .5em;
+    -moz-border-top-right-radius: .5em;
+    border-top-left-radius: .5em;
+    border-top-right-radius: .5em
+}
+
+.text_wrapper {
+    margin-bottom: 10px;
+    text-align: left
+}
+
+.text_wrapper a {
+    text-decoration: underline
+}
+
+.text_wrapper h1 {
+    margin-right: auto;
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 17px
+}
+
+.section-block {
+    border-radius: 3px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px
+}
+
+.answersection,
+.instruction {
+    margin-right: auto;
+    margin-left: auto
+}
+
+
+
+.instruction {
+    margin-bottom: 10px;
+    padding-top: 0;
+    font-style: normal;
+    width: 96%
+}
+
+.qtext {
+    padding: 20px 2% 2px
+}
+
+.title {
+    font-weight: 700;
+    color: #000;
+    display: none
+}
+
+.answersection {
+    text-align: center;
+    width: 98%
+}*/
+
+.instruction {
+    font-size: 16px;
+    color: #7d7d7d
+}
+* html .wrapper {
+    width: 740px
+}
+
+.wrapper {
+    min-width: 740px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    padding: 0
+}
+
+div.top-header {
+    height: 50px;
+    background-color: #4773A6;
+    position: relative;
+    box-shadow: 0 1px 2px 0 #7e8c9a;
+    -webkit-box-shadow: 0 1px 2px 0 #7e8c9a;
+    -moz-box-shadow: 0 1px 2px 0 #7e8c9a;
+	padding-top:10px;
+}
+
+div.top-header-container {
+    position: relative;
+    max-width: 1050px;
+    margin: auto
+}
+
+/*.ssi-logo-img {
+    margin: auto;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100%;
+    height: 32px\9
+}
+
+div.ssi-logo-l {
+    position: absolute;
+    width: 120px;
+    height: 60px;
+    top: 0;
+    left: 40px;
+    display: none;
+    box-sizing: content-box;
+    border-color: #FFF;
+    -webkit-box-shadow: 0 .5px 1px .5px #ced3e1;
+    -moz-box-shadow: 0 .5px 1px .5px #ced3e1;
+    box-shadow: 0 .5px 1px .5px #ced3e1
+}
+
+div.ssi-logo-l:after,
+div.ssi-logo-l:before {
+    content: " ";
+    border-style: solid;
+    width: 0;
+    position: absolute
+}
+
+div.ssi-logo-l .ssi-logo-img,
+div.ssi-logo-l img {
+    max-width: 80%;
+    margin-top: 15px
+}
+
+div.ssi-logo-l:before {
+    display: block;
+    border-width: 14px 64px 0;
+    border-color: #ced3e1 transparent;
+    left: .75px;
+    bottom: -14.5px
+}
+
+div.ssi-logo-l:after {
+    display: block;
+    border-width: 14px 65px 0;
+    left: 0;
+    bottom: -14px;
+    border-top-color: inherit;
+    border-right-color: transparent;
+    border-left-color: transparent;
+    border-bottom-color: inherit
+}
+
+div.ssi-logo {
+    position: absolute;
+    box-sizing: border-box;
+    width: 100px;
+    height: 45px;
+    top: 0;
+    left: 0;
+    -webkit-border-radius: 0 0 3px 3px;
+    -moz-border-radius: 0 0 3px 3px;
+    border-radius: 0 0 3px 3px;
+    margin-left: 20px
+}
+
+div.ssi-logo .ssi-logo-img,
+div.ssi-logo img {
+    max-width: 80%;
+    margin-top: 5px
+}
+
+div.ssi-logo .ssi-logo-img,
+div.ssi-logo-l .ssi-logo-img {
+    background-image: url(https://confirmit.ssisurveys.com/isa/PYAMLMFAKKOYIBEYNHKRJRBIMIEALXOH/GlobalSL2016/ssi-logo.png)
+}*/
+
+.content-area {
+    /*background-color: #E9ECEF;*/
+    display: block;
+    padding-top: 20px;
+    max-width: 1050px;
+    margin: 0 auto
+}
+
+input::-ms-clear {
+    display: none
+}
+
+.hide {
+    display: none
+}
+
+.visible {
+    visibility: visible
+}
+
+.absolute {
+    position: absolute!important
+}
+
+.relative {
+    position: relative!important
+}
+
+.top-0 {
+    top: 0
+}
+
+.bottom-0 {
+    bottom: 0
+}
+
+.left-0 {
+    left: 0
+}
+
+.right-0 {
+    right: 0
+}
+
+.margin-0-all {
+    margin: 0!important
+}
+
+.inline-block {
+    display: inline-block
+}
+
+.block {
+    display: block
+}
+
+.margin-0-auto {
+    margin: 0 auto
+}
+
+.v-top {
+    vertical-align: top
+}
+
+.v-middle {
+    vertical-align: middle
+}
+
+.v-bottom {
+    vertical-align: bottom
+}
+
+.text-align-left {
+    text-align: left
+}
+
+.text-align-right {
+    text-align: right
+}
+
+.text-align-center {
+    text-align: center
+}
+
+.float-left {
+    float: left
+}
+
+.float-right {
+    float: right
+}
+
+.clearfix:after {
+    content: "";
+    position: relative;
+    display: block;
+    clear: both
+}
+
+.overflow-hidden {
+    overflow: hidden
+}
+
+.overflow-auto {
+    overflow: auto
+}
+
+.overflow-visible {
+    overflow: visible
+}
+
+.overflow-scroll {
+    overflow: scroll
+}
+
+.cursor-pointer {
+    cursor: pointer
+}
+
+.line-height-normal {
+    line-height: normal
+}
+
+.list-style-none {
+    list-style: none
+}
+
+.reset-layout {
+    margin: 0;
+    padding: 0
+}
+
+.noselect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+@media screen and (min-width:480px) {
+    .content-area {
+        padding-top: 20px
+    }
+    .nav {
+        padding-bottom: 15px
+    }
+    .section-block {
+        margin-bottom: 10px
+    }
+}
+
+@media only screen and (min-width:1400px) {
+    div.ssi-logo {
+        display: none
+    }
+    div.ssi-logo-l {
+        display: block
+    }
+    div.ssi-progress {
+        padding-left: 5px;
+        padding-right: 5px
+    }
+    .content-area {
+        padding-top: 50px
+    }
+}
+
+@media screen and (max-height:480px),
+screen and (max-width:480px) {
+    body {
+        padding: 0!important;
+        margin: 3px!important;
+        font-size: 15px
+    }
+    .abtn {
+        min-width: 32px
+    }
+    .wrapper {
+        width: 100%;
+        min-width: 100%
+    }
+   .questiontitle {
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        border-top-left-radius: 0!important;
+        border-top-right-radius: 0!important
+    }
+    .instruction {
+        width: 92%
+    }
+    .content-area {
+        margin-top: 0
+    }
+    .answersection {
+        width: 98%
+    }
+    .instruction {
+        margin-bottom: 5px
+    }
+    .text_wrapper {
+        margin-bottom: 5px
+    }
+    .section-block:first-child {
+        border-top-right-radius: 0;
+        border-top-left-radius: 0
+    }
+    .grid-dropdown-style {
+        width: 100%
+    }
+    .qtext {
+        padding: 10px 4%
+    }
+    .content-area {
+        padding-top: 0!important
+    }
+    .section-block {
+        margin-left: 0;
+        margin-right: 0
+    }
+}
+
+@media print {
+    body * {
+        display: none!important
+    }
+}
+.ssi-logo-l,.ssi-logo{display:none !important;}
+div.ssi-progress{padding-left:5px !important;}
+
+@media only screen and (min-width: 1400px){
+	div.ssi-progress {padding-left: 5px !important;}
+	div.content-area {padding-top: 20px;}
+}
+div.top-header{
+  display:block !important;
+  background-color: #3f81ec;
+}
