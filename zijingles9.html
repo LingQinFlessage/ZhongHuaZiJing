@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta name="robots" content="noindex">
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="robots" content="noindex">
+<title>中华字经</title>
+<link rel="stylesheet" href="assets/theme.color.zijing.css" type="text/css">
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+
+</head>
+<body class="body">
+<form class="zijingform">
+<!--layout-->
+
+
+<!-- Header -->
+<div class="top-header">
+	 <a class="return-anchor" href="index.html">返回目录</a>
+</div>
+<div class="content-area">		
+	<!--content-->
+<!--<div>-->
+<div class="section-block">
+<div class="text_wrapper">
+	
+</div>
+
+</div>
+<div class="section-block jqscript-section">
+<div id="jizingTool_text">
+
+	<div id='toolContainer'>
+
+	</div>
+	<div id='test-result' class="row">
+		<p>平均用时： <span class="timeCounter"></span>  秒</p>
+		<p>最高用时： <span class="highCounter"></span> 秒</p>
+		<p>正确： <span class="correctCounter"></span> </p>
+		<p>错误： <span class="wrongCounter"></span> </p>
+		<div class="wrong-words-wrapper">
+			<p>小朋友，下面的字还要努力认住哦</p>
+			<div class="row"></div>
+		</div>
+	</div>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- Latest compiled and minified JavaScript -->
+<link rel="stylesheet" href="assets/zijingGame_v0.1.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="assets/zijingGame_v0.1.min.js"></script>
+<style>
+/******custom style overwrite*********/
+div.section-block:not(:last-child){
+	display:none;
+}
+@media screen and (max-height: 480px), screen and (max-width: 480px){
+.jqscript-section.section-block {
+    margin-top: 10px!important;
+}
+}
+.content-container a{
+ display:block;
+ margin-bottom:8px;
+ font-size:16px;
+}
+.content-container a{
+ display:block;
+ margin-bottom:8px;
+ font-size:16px;
+}
+.return-anchor{
+ color:#fff;
+ font-size:20px;
+ margin:20px;
+}
+.return-anchor:hover{
+ color:#fff;
+}
+.content-container{
+  text-align:center;
+  font-family: Roboto, Calibri, Arial, Helvetica, Sans-serif;
+}
+.content-container .book{
+ font-size:1.5rem;
+}
+.table-content li{
+list-style-type:none;
+}
+.level1{
+  color:#ff0000 !important;
+}
+.level2{
+  color:#ff1a8c !important;
+}
+.level3{
+  color:#cc0066 !important;
+}
+.level4{
+  color:#b30000 !important;
+}
+.level5{
+  color:#00b300 !important;
+}
+.level6{
+  color:#0000b3 !important;
+}
+#toolContainer{
+  margin-top:10px;
+}
+#toolContainer .scale-container,#toolContainer .key-container{
+width:300px;
+margin-bottom:10px;
+}
+#toolContainer .scale-container .scale-body{
+height:90px;
+padding:10px;
+curosor:pointer;
+}
+#toolContainer .key-container{
+height:80px;
+}
+#toolContainer .scale-container .scale-contentbox{
+width:40px;
+height:40px;
+/*background-color:#d0e2f0;
+border-radius: 50%;*/
+}
+.shot{
+color:#5772a3;
+}
+#toolContainer .statements{
+height:100px;
+}
+#toolContainer .statements .statement{
+font-size:50pt;
+height:100px;
+line-height:100px;
+text-transform:none;
+}
+.start-button{
+ margin:0 10px;
+}
+.tool-button,.tool-button:hover {
+    background-color: #3f81ec;
+	padding:8px 35px;
+}
+.progress-text{
+  visibility:hidden;
+}
+#test-result{
+display:none;
+max-width:90%;
+width:400px;
+margin:10px auto;
+}
+.wrong-words-wrapper .character{
+ font-size:35pt;
+ padding:0;
+}
+.wrong-words-wrapper{
+	display:none;
+}
+.btn {
+    text-decoration: none;
+}
+</style>
+
+	<div class="content-container">
+
+	</div>
+
+</div>
+</div>
+
+
+<!--</div>-->
+
+</div>
+
+</form>
+<script type="text/javascript">
+$(document).ready(function() {
+ setTimeout(function() { window.scrollTo(0, 1); }, 0);
+ $('img').on('dragstart', function(event) {
+  event.preventDefault();
+ }); 
+
+	var currentLes=9;
+	var script = document.createElement('script');
+	script.onload = function () {
+		//do stuff with the script
+		//console.log(words);
+		var myZijingCard=new ZijingCardGame({
+			'oCardItems':getWords(),		
+			'sStart'		:'前十二句',
+			'sStartTwo'		:'全文',		
+			'sTitle':"第九课 品行",
+			'imagePath'		:'assets/'
+		})		
+	};
+	script.src = "assets/les"+currentLes+"words.js";
+
+	document.head.appendChild(script);	
+	
+	function getWords(){
+		var iWordCount=0;
+		var arr=[[],[],[],[],[]];
+		for(var i=0;i<words["les"+currentLes].sentences.length;i++){
+			for(var s=0;s<words["les"+currentLes].sentences[i].length;s++){
+				arr[0][iWordCount]=iWordCount+1;
+				arr[1][iWordCount]=words["les"+currentLes].sentences[i][s].char;
+				arr[3][iWordCount]="";
+				arr[4][iWordCount]=words["les"+currentLes].sentences[i][s].level;
+				iWordCount++;
+				words["les"+currentLes].sentences[i][s].code=iWordCount;
+				//iOrderArr.push(iWordCount);
+				
+			}
+			
+		}
+		return arr;
+	}
+	
+	function addCodeToWordsArr(arr){
+		var iWordCount=0;
+		for(var i=0;i<words["les"+currentLes].sentences.length;i++){
+			for(var s=0;s<words["les"+currentLes].sentences[i].length;s++){
+				arr[iWordCount]=words["les"+currentLes].sentences[i][s].level;
+				iWordCount++;
+				words["les"+currentLes].sentences[i][s].code=iWordCount;
+				//iOrderArr.push(iWordCount);
+				
+			}
+			
+		}
+		//console.log(words);
+	}	
+ 
+});
+</script>
+</body>
+</html>
