@@ -70,7 +70,7 @@ height:40px;
 position:absolute;
 top:-15px;
 right:-15px;
-background-image: url("http://d2n88fe5uqdqty.cloudfront.net/ssibnl/2015/ORD-183385-D5L9/Section6/ticker_blue_38x38.png");
+background-image: url("ticker_blue_38x38.png");
 background-position:center center;
 background-repeat:no-repeat;
 }
@@ -93,7 +93,7 @@ margin:10px auto 0px;
 text-align:center;
 }
 #toolContainer .key-container .key-body{
-background-image: url("http://d2n88fe5uqdqty.cloudfront.net/ssibnl/2015/ORD-183385-D5L9/Section6/key_s.png");
+background-image: url("key_s.png");
 background-position:center center;
 background-repeat:no-repeat;
 position:relative;
