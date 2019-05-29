@@ -1,0 +1,40 @@
+var words={
+	les7:{
+		title:"名人",
+		sentences:[
+[{char:"格",level:2},
+{char:"林",level:2},
+{char:"童",level:2},
+{char:"话",level:1}],
+[{char:"伊",level:3},
+{char:"索",level:3},
+{char:"寓",level:3},
+{char:"言",level:1}],
+[{char:"莎",level:6},
+{char:"翁",level:3},
+{char:"托",level:2},
+{char:"氏",level:3}],
+[{char:"福",level:1},
+{char:"摩",level:3},
+{char:"探",level:2},
+{char:"案",level:2}],
+[{char:"但",level:1},
+{char:"丁",level:3},
+{char:"哥",level:1},
+{char:"德",level:2}],
+[{char:"伽",level:6},
+{char:"丘",level:3},
+{char:"十",level:1},
+{char:"谈",level:1}],
+[{char:"培",level:3},
+{char:"根",level:1},
+{char:"牛",level:1},
+{char:"顿",level:1}],
+[{char:"爱",level:1},
+{char:"因",level:1},
+{char:"斯",level:3},
+{char:"坦",level:3}]
+		]
+
+	}
+}
