@@ -41,12 +41,12 @@ var words={
 [{char:"钩",level:3},
 {char:"爪",level:4},
 {char:"杖",level:5},
-{char:"鞭",level:4}],,
-[{char:"动",level:1}
+{char:"鞭",level:4}],
+[{char:"动",level:1},
 {char:"静",level:1},
 {char:"迂",level:5},
-{char:"回",level:1}],,
-[{char:"摔",level:2}
+{char:"回",level:1}],
+[{char:"摔",level:2},
 {char:"跤",level:6},
 {char:"击",level:2},
 {char:"拳",level:3}]
