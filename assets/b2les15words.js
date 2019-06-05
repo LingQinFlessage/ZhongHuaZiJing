@@ -1,5 +1,5 @@
 var words={
-	les14:{
+	les15:{
 		title:"提手旁",
 		sentences:[
 [{char:"技 ",level:1},
