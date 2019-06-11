@@ -13,7 +13,11 @@ var words={
 [{char:"娇",level:4},
 {char:"矫",level:5},
 {char:"稼",level:2},
-{char:"嫁",level:4}]
+{char:"嫁",level:4}],
+[{char:"困",level:1},
+{char:"闲",level:2},
+{char:"团",level:2},
+{char:"因",level:1}]
 		]
 
 	}

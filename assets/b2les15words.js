@@ -2,9 +2,9 @@ var words={
 	les15:{
 		title:"提手旁",
 		sentences:[
-[{char:"技 ",level:1},
-{char:"拉 ",level:1},
-{char:"摔  ",level:1},
+[{char:"技",level:1},
+{char:"拉",level:1},
+{char:"摔",level:1},
 {char:"探",level:2}],
 [{char:"拒",level:2},
 {char:"招",level:2},
@@ -21,7 +21,11 @@ var words={
 [{char:"担",level:2},
 {char:"抬",level:1},
 {char:"扛",level:2},
-{char:"搬",level:1}]
+{char:"搬",level:1}],
+[{char:"折",level:2},
+{char:"排",level:1},
+{char:"批",level:1},
+{char:"搅",level:3}]
 		]
 
 	}
